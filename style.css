@@ -1,34 +1,51 @@
 /* --------------- css colour variables --------------- */
 :root {
-
-    /* Primary */
-    --Pink: hsl(322, 100%, 66%);
-    /* Neutral */
-    --very-dark-cyan: hsl(192, 100%, 9%);
-    --very-pale-blue: hsl(207, 100%, 98%);
+  /* Primary */
+  --pink: hsl(322, 100%, 66%);
+  /* Neutral */
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
 }
 
+/* --------------- header --------------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+}
 
+.home-icon {
+  margin: 1em;
+  padding: 1em;
+  text-decoration: none;
+}
+
+.try-btn {
+  margin: 1em;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: var(--pink);
+  border-style: solid;
+  border-radius: 2em;
+  border-width: thin;
+}
 
 /* --------------- footer --------------- */
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
 
 /* --------------- media queries  --------------- */
-@media only screen and (max-width: 375px) {}
-
-
-
-
-
-
-
+@media only screen and (max-width: 375px) {
+}
 
 /* --------------- NOTES  --------------- 
 
