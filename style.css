@@ -1,3 +1,16 @@
+/* --------------- css colour variables --------------- */
+:root {
+
+    /* Primary */
+    --Pink: hsl(322, 100%, 66%);
+    /* Neutral */
+    --very-dark-cyan: hsl(192, 100%, 9%);
+    --very-pale-blue: hsl(207, 100%, 98%);
+}
+
+
+
+/* --------------- footer --------------- */
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -6,3 +19,26 @@
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+/* --------------- media queries  --------------- */
+@media only screen and (max-width: 375px) {}
+
+
+
+
+
+
+
+
+/* --------------- NOTES  --------------- 
+
+
+### Headings
+font-family: 'Poppins', sans-serif;
+- Weights: 700
+
+### Body
+font-family: 'Open Sans', sans-serif;
+- Weights: 400, 600, 700
+
+*/
