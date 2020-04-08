@@ -12,17 +12,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 20vh;
+  height: 15vh;
+  background-color: aquamarine;
 }
 
 .home-icon {
-  margin: 1em;
-  padding: 1em;
+  margin: 0 0 0 5%;
   text-decoration: none;
 }
 
 .try-btn {
-  margin: 1em;
+  margin: 0 5% 0 0;
   padding: 0.5em 1.5em;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
