@@ -7,8 +7,10 @@
   --very-pale-blue: hsl(207, 100%, 98%);
 }
 
+/* --------------- body --------------- */
 body {
-  /* overflow-x: hidden; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 /* --------------- header --------------- */
@@ -28,8 +30,6 @@ header {
   margin: 0 5% 0 0;
   padding: 0.5em 1.5em;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
   color: var(--pink);
   border-style: solid;
   border-radius: 2em;
@@ -52,8 +52,8 @@ header {
 
 .landing_title {
   margin: 0;
+  text-align: center;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
   font-size: 3em;
 }
 
@@ -61,8 +61,6 @@ header {
   margin: 1.5em;
   width: 50%;
   text-align: center;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
   font-size: 1.1em;
 }
 
@@ -70,7 +68,6 @@ header {
   margin: 2em 1em;
   padding: 1.5em 5em;
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
   font-weight: 700;
   color: white;
   background-color: var(--pink);
@@ -90,6 +87,27 @@ header {
 .screen-img {
   margin: 10% 1em 1em 1em;
   width: 70vw;
+}
+
+/* --------------- social-stats  --------------- */
+.stats-container {
+  margin: 5% 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.stats_value {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 7em;
+}
+
+.stats_name {
+  margin: 0;
+  text-align: center;
+  color: grey;
+  font-size: 1.5em;
 }
 
 /* --------------- footer --------------- */
@@ -116,6 +134,23 @@ header {
   .landing_title {
     font-size: 1.5em;
   }
+
+  .landing_text {
+    font-size: 0.8em;
+  }
+
+  .landing_btn {
+    padding: 1em 3em;
+    font-size: 0.8em;
+  }
+
+  .stats_value {
+    font-size: 2.5em;
+  }
+
+  .stats_name {
+    font-size: 0.8em;
+  }
 }
 
 /* --------------- NOTES  --------------- 
@@ -123,7 +158,6 @@ header {
 
 ### Headings
 font-family: 'Poppins', sans-serif;
-- Weights: 700
 
 ### Body
 font-family: 'Open Sans', sans-serif;
