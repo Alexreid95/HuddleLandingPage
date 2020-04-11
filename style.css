@@ -7,6 +7,10 @@
   --very-pale-blue: hsl(207, 100%, 98%);
 }
 
+body {
+  /* overflow-x: hidden; */
+}
+
 /* --------------- header --------------- */
 header {
   display: flex;
@@ -54,16 +58,17 @@ header {
 }
 
 .landing_text {
-  margin: 1em;
+  margin: 1.5em;
   width: 50%;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  font-size: 1.1em;
 }
 
 .landing_btn {
-  margin: 1em;
-  padding: 1em 3em;
+  margin: 2em 1em;
+  padding: 1.5em 5em;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -80,6 +85,11 @@ header {
   border-style: solid;
   border-width: thin;
   border-color: var(--pink);
+}
+
+.screen-img {
+  margin: 10% 1em 1em 1em;
+  width: 70vw;
 }
 
 /* --------------- footer --------------- */
