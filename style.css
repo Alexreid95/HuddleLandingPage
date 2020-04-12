@@ -9,6 +9,7 @@
 
 /* --------------- body --------------- */
 body {
+  margin: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
@@ -21,7 +22,7 @@ header {
   height: 15vh;
 }
 
-.home-icon {
+.home-link {
   margin: 0 0 0 5%;
   text-decoration: none;
 }
@@ -110,6 +111,63 @@ header {
   font-size: 1.5em;
 }
 
+/* --------------- info  --------------- */
+.info-cont {
+  display: grid;
+  grid-template:
+    "title illustration"1fr "text illustration"1fr;
+  /* width: 100VW; */
+}
+
+.info-cont.sec1,
+.info-cont.sec3 {
+  background-color: var(--very-pale-blue);
+}
+
+.info-cont.sec2 {
+  grid-template:
+    "illustration title"1fr "illustration text"1fr;
+}
+
+.info_title {
+  margin: 0 10%;
+  grid-area: title;
+  align-self: end;
+  justify-self: start;
+  font-family: "Poppins", sans-serif;
+  font-size: 3em;
+}
+
+.info_text {
+  margin: 0 10%;
+  grid-area: text;
+  align-self: start;
+  justify-self: start;
+  width: 70%;
+}
+
+.info_illustration {
+  margin: 1em;
+  grid-area: illustration;
+  align-self: center;
+  justify-self: center;
+  width: 45vw;
+}
+
+.border {
+  width: 100vw;
+}
+
+.border.border1 {
+  margin: 5% 0 0 0;
+}
+
+.border.border2 {
+  margin: 0 0 5% 0;
+  transform: rotate(180deg);
+}
+
+
 /* --------------- footer --------------- */
 .attribution {
   font-size: 11px;
@@ -122,15 +180,18 @@ header {
 
 /* --------------- media queries  --------------- */
 @media only screen and (max-width: 375px) {
-  /* .home-icon {
-    width: 120px;
-    height: 20px;
-  } */
 
-  .try-btn {
-    font-size: 0.8em;
+  /* --------------- header --------------- */
+  .home-icon {
+    width: 80%;
   }
 
+  .try-btn {
+    padding: 0.4em 1em;
+    font-size: 0.7em;
+  }
+
+  /* --------------- landing --------------- */
   .landing_title {
     font-size: 1.5em;
   }
@@ -144,6 +205,7 @@ header {
     font-size: 0.8em;
   }
 
+  /* --------------- social-stats  --------------- */
   .stats_value {
     font-size: 2.5em;
   }
@@ -151,11 +213,23 @@ header {
   .stats_name {
     font-size: 0.8em;
   }
+
+  /* --------------- info  --------------- */
+  .info_title {
+    font-size: 1.5em;
+  }
+
+  .info_text {
+    font-size: 0.7em;
+  }
+
 }
 
+
+
+
+
 /* --------------- NOTES  --------------- 
-
-
 ### Headings
 font-family: 'Poppins', sans-serif;
 
