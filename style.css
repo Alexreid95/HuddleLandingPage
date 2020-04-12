@@ -12,7 +12,30 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
+
+/* --------------- button --------------- */
+.btn {
+  margin: 2em 1em;
+  padding: 1.5em 5em;
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  background-color: var(--pink);
+  border-radius: 2em;
+  box-shadow: 1px 1px 10px -2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--pink);
+  background-color: white;
+  border-style: solid;
+  border-width: thin;
+  border-color: var(--pink);
+}
+
 
 /* --------------- header --------------- */
 header {
@@ -65,26 +88,6 @@ header {
   font-size: 1.1em;
 }
 
-.landing_btn {
-  margin: 2em 1em;
-  padding: 1.5em 5em;
-  text-decoration: none;
-  font-weight: 700;
-  color: white;
-  background-color: var(--pink);
-  border-radius: 2em;
-  box-shadow: 1px 1px 10px -2px rgba(0, 0, 0, 0.5);
-  cursor: pointer;
-}
-
-.landing_btn:hover {
-  color: var(--pink);
-  background-color: white;
-  border-style: solid;
-  border-width: thin;
-  border-color: var(--pink);
-}
-
 .screen-img {
   margin: 10% 1em 1em 1em;
   width: 70vw;
@@ -116,7 +119,7 @@ header {
   display: grid;
   grid-template:
     "title illustration"1fr "text illustration"1fr;
-  /* width: 100VW; */
+  width: 100VW;
 }
 
 .info-cont.sec1,
@@ -124,10 +127,10 @@ header {
   background-color: var(--very-pale-blue);
 }
 
-.info-cont.sec2 {
+/* .info-cont.sec2 {
   grid-template:
     "illustration title"1fr "illustration text"1fr;
-}
+} */
 
 .info_title {
   margin: 0 10%;
@@ -167,6 +170,21 @@ header {
   transform: rotate(180deg);
 }
 
+/* --------------- get started section --------------- */
+.get-started {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.get-started_title {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+
+}
 
 /* --------------- footer --------------- */
 .attribution {
@@ -177,6 +195,12 @@ header {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+
+
+
+
 
 /* --------------- media queries  --------------- */
 @media only screen and (max-width: 375px) {
