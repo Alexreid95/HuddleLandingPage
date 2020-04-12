@@ -187,6 +187,14 @@ header {
 }
 
 /* --------------- footer --------------- */
+.bottom-border {
+  width: 100vw;
+}
+
+.bottom {
+  background-color: var(--very-dark-cyan);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
